@@ -1,0 +1,75 @@
+
+CLIMATE DIGITAL TWIN - INDIA
+Analysis Report
+Date: 2026-06-17 13:47:09
+
+============================================================
+DATASET STATISTICS
+============================================================
+Total Records: 7310
+Cities Covered: 5
+Date Range: 2024-01-01 to 2044-01-05
+Duration: 7309 days
+
+Temperature:
+  - Average: 26.6°C
+  - Range: 18.0°C to 35.0°C
+
+Humidity:
+  - Average: 60.1%
+  - Range: 30.0% to 90.0%
+
+Rainfall:
+  - Total: 36206.9 mm
+  - Daily Average: 5.0 mm
+
+Air Quality Index:
+  - Average AQI: 175.4
+  - Poor Days: 1813
+  - Moderate Days: 1846
+  - Good Days: 1871
+
+============================================================
+FEATURE ENGINEERING
+============================================================
+Total Features Created: 22
+Feature Categories:
+  - Temporal Features: 7
+  - Lag Features: 4
+  - Rolling Features: 2
+  - Derived Features: 4
+  - Categorical: 1
+
+============================================================
+EXTREME EVENTS
+============================================================
+Heat Waves: 198 days
+Cold Waves: 731 days
+Heavy Rainfall: 731 days
+High AQI: 2936 days
+Strong Winds: 731 days
+
+============================================================
+ML MODEL PERFORMANCE
+============================================================
+Training Samples: 5844
+Testing Samples: 1461
+
+Random Forest:
+  - RMSE: 5.030°C
+  - MAE: 4.368°C
+  - R² Score: -0.0040
+
+Gradient Boosting (BEST):
+  - RMSE: 5.125°C
+  - MAE: 4.414°C
+  - R² Score: -0.0423
+
+============================================================
+RECOMMENDATIONS
+============================================================
+1. Use Gradient Boosting model for production (best R² score)
+2. Implement LSTM for long-term forecasts
+3. Deploy Kalman Filter for continuous data assimilation
+4. Create real-time dashboard with alerts
+5. Set up monthly retraining pipeline
