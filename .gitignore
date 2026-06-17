@@ -12,11 +12,7 @@ ENV/
 .ipynb_checkpoints/
 *.ipynb
 
-# Models (too big)
-models/*.pkl
-models/*.h5
-*.pkl
-*.h5
+
 
 # Data (optional - comment out if you want to upload)
 data/*.csv
